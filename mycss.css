@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.box__game{
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  background-color: salmon;
+}
+
+#character{
+  width: 20px;
+  height: 50px;
+  background-color: green;
+  position: relative;
+  top: 150px;
+ 
+}
+
+.lompat{
+   animation: jump 0.3s linear;
+}
+
+#block{
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: relative;
+  top: 130px;
+  left:300px;
+  animation: block 1.5s infinite linear;
+}
+
+@keyframes block{
+  0%{left:300px}
+  100%{left:-20px}
+}
+
+@keyframes jump{
+  0%{top:150px}
+  25%{top:100px}
+  45%{top:100px}
+  75%{top:100px}
+  100%{top:150px}
+}
